@@ -47,11 +47,11 @@ func main(){args := os.Args[1:]
 	}
 
 	if len(dataSlice) > 1 {
-		coefK, coefB := functions.LinearRegLine(dataSlice)
+		a, b := functions.LinearRegLine(dataSlice)
 		fmt.Print("Linear Regression Line: y = ")
-		fmt.Printf("%.6f", coefK)
+		fmt.Printf("%.6f", a)
 		fmt.Print("x + ")
-		fmt.Printf("%.6f\n", coefB)
+		fmt.Printf("%.6f\n", b)
 		pearson := functions.PearsonCoef(dataSlice)
 		fmt.Print("Pearson Correlation Coefficient: ")
 		fmt.Printf("%.10f\n", pearson)
