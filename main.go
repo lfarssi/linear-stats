@@ -51,12 +51,9 @@ func main(){args := os.Args[1:]
 		fmt.Print("Linear Regression Line: y = ")
 		fmt.Printf("%.6f", coefK)
 		fmt.Print("x + ")
-		fmt.Printf("%.6f", coefB)
-		fmt.Println()
-
+		fmt.Printf("%.6f\n", coefB)
 		pearson := functions.PearsonCoef(dataSlice)
 		fmt.Print("Pearson Correlation Coefficient: ")
-		fmt.Printf("%.10f", pearson)
-		fmt.Println()
+		fmt.Printf("%.10f\n", pearson)
 	}
 }
